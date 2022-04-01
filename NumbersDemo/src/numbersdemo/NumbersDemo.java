@@ -40,13 +40,13 @@ public class NumbersDemo {
         displayNumberSquared(snum);
         
     }  
-       public static void displayTwiceTheNumber(int num) //Method one: multiply 2 by the numbers given
+       public static void displayTwiceTheNumber(int num) //Method one:The numbers given will be multiplied 2. 
        {
         int NUMT = 2;
      
         System.out.println(num + " multiplied by " + NUMT + " is " +(num * NUMT));      
     }
-        public static void displayNumberPlusFive(int num) //Method two: add 5 to the numbers given
+        public static void displayNumberPlusFive(int num) //Method two: Will add 5 to the numbers given.
         {
         int NUMF = 5;
      
