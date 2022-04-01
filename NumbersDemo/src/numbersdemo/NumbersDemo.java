@@ -21,10 +21,10 @@ public class NumbersDemo {
         int fnum ;
         int snum ;
         
-        System.out.println("Enter first number");
+        System.out.println("Enter the first number");
         fnum = VAR.nextInt();
         
-        System.out.println("Enter second number");
+        System.out.println("Enter the second number");
         snum = VAR.nextInt();
         
         //Method one
