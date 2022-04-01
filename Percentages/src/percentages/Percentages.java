@@ -22,10 +22,10 @@ public class Percentages {
         double first;
         double second;
         
-        System.out.println("Enter first number");
+        System.out.println("Enter the first number");
         first = PERCEN.nextDouble();
        
-        System.out.println("Enter second number");
+        System.out.println("Enter the second number");
         second = PERCEN.nextDouble();
         
         
