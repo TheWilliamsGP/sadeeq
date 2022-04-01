@@ -17,7 +17,7 @@ public class Percentages {
      */
     public static void main(String[] args) 
     {
-        Scanner PERCEN  = new Scanner(System.in);//Scanner allows keyboard input
+        Scanner PERCEN  = new Scanner(System.in);//Scanner allows keyboard input.
         
         double first;
         double second;
@@ -32,7 +32,8 @@ public class Percentages {
         computePercent(first,second);
         
     }
-    public static void computePercent(double num, double num1)//Method 
+    //Method will work out % of the number and then reverse the order of the calulation. 
+    public static void computePercent(double num, double num1)
     {
         double PER = num/num1*100;
         double PERC = num1/num*100;
