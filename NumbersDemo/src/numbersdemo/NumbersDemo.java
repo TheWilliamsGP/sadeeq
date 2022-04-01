@@ -17,7 +17,7 @@ public class NumbersDemo {
      */
     public static void main(String[] args) {
        
-        Scanner VAR = new Scanner(System.in);//Scanner allows keyboard input
+        Scanner VAR = new Scanner(System.in);//Scanner allows keyboard input.
         int fnum ;
         int snum ;
         
@@ -31,7 +31,7 @@ public class NumbersDemo {
         displayTwiceTheNumber(fnum);
         displayTwiceTheNumber(snum);
         
-        //Metod two
+        //Method two
         displayNumberPlusFive(fnum);
         displayNumberPlusFive(snum);
         
@@ -52,7 +52,7 @@ public class NumbersDemo {
      
         System.out.println (num + " plus " + NUMF + " is " +(num + NUMF)); 
         }
-        public static void displayNumberSquared(int num) //Method three: will get the squared value of the numbers given
+        public static void displayNumberSquared(int num) //Method three: will get the squared value of the numbers given.
         {                                                   
            
         System.out.println((num*num) + " is " + num + " squared");
