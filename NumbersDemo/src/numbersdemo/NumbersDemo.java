@@ -54,11 +54,8 @@ public class NumbersDemo {
         }
         public static void displayNumberSquared(int num) //Method three: will get the squared value of the numbers given
         {                                                   
-           //int Square = num1^2;
-           //int Squared = num^2;
-       //System.out.println(Square  + " is " + num + " squared");//the squared symbol wasn't working
-       //System.out.println(Squared  + " is " + num + " squared");
-        System.out.println((num*num) + " is " + num + " squared");//the squared symbol wasn't working
+           
+        System.out.println((num*num) + " is " + num + " squared");
 
         }
 }
