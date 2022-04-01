@@ -27,23 +27,23 @@ public class Booln {
     System.out.println("Enter second number");
     snum = Compare.nextInt();
     
-    boolean b1 = (fnum<snum);// Testing if the numbers are less than 
-        System.out.println("Is " + fnum + " less than " + snum + " " + b1);
+    boolean b1 = (fnum<snum);// Testing if the first number is less than the second number.
+        System.out.println("Is " + fnum + " less than " + snum + "? " + b1);
     
-    boolean b2 = (fnum>snum);// Testing if the numbers are more than 
-        System.out.println("Is " + fnum + " greater than " + snum + " " + b2);
+    boolean b2 = (fnum>snum);// Testing if the first number is more than the second number. 
+        System.out.println("Is " + fnum + " greater than " + snum + "? " + b2);
     
-    boolean b3 = (fnum==snum);// Testing if the numbers are equal
-        System.out.println("Is " + fnum + " equal to " + snum + " " + b3);
+    boolean b3 = (fnum==snum);// Testing if the first number is equal to the second number.
+        System.out.println("Is " + fnum + " equal to " + snum + "? " + b3);
     
-    boolean b4 = (fnum<=snum);// Testing if the numbers are less than equal
-        System.out.println("Is " + fnum + " less than equal " + snum + " " + b4);
+    boolean b4 = (fnum<=snum);// Testing if the first number is less than equal to the second number.
+        System.out.println("Is " + fnum + " less than equal to " + snum + "? " + b4);
     
-    boolean b5 = (fnum!=snum);// Testing if the numbers are not equal
-        System.out.println("Is " + fnum + " not equal " + snum + " " + b5);
+    boolean b5 = (fnum!=snum);// Testing if the first number and the second number are not equal.
+        System.out.println("Is " + fnum + " not equal to " + snum + "? " + b5);
     
-    boolean b6 = (fnum>=snum);// Testing if the numbers are less than equal
-        System.out.println("Is " + fnum + " greater than equal " + snum + " " + b6);
+    boolean b6 = (fnum>=snum);// Testing if the first number is greater than equal to the second number.
+        System.out.println("Is " + fnum + " greater than equal to " + snum + "? " + b6);
     }
     
 }
