@@ -6,6 +6,7 @@ package logins;
 import javax.swing.JOptionPane;
 import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
+import logins.Login_s;
 /**
  *
  * @author sadeeqwilliams
@@ -60,7 +61,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jbtnLogin.setFont(new java.awt.Font("Helvetica Neue", 0, 25)); // NOI18N
+        jbtnLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
         jbtnLogin.setText("Login");
         jbtnLogin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jbtnLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +70,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jbtnReset.setFont(new java.awt.Font("Helvetica Neue", 0, 25)); // NOI18N
+        jbtnReset.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
         jbtnReset.setText("Reset");
         jbtnReset.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jbtnReset.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +79,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        jbtnExit.setFont(new java.awt.Font("Helvetica Neue", 0, 25)); // NOI18N
+        jbtnExit.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
         jbtnExit.setText("Exit");
         jbtnExit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jbtnExit.addActionListener(new java.awt.event.ActionListener() {
@@ -149,7 +150,7 @@ public class Login extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(32, Short.MAX_VALUE)
+                .addContainerGap(30, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -168,8 +169,17 @@ public class Login extends javax.swing.JFrame {
         jtxtUserName.setText(null);
         jPassword.setText(null);
         systemExit();
+        
+        Login_s Info = new Login_s();
+        Info.setVisible(true);
     }
     
+        else
+    {
+        JOptionPane.showMessageDialog(null,"Invalid Login Details", "Login Error", JOptionPane.ERROR_MESSAGE);
+        jtxtUserName.setText(null);
+        jPassword.setText(null);
+    }
     }//GEN-LAST:event_jbtnLoginActionPerformed
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
