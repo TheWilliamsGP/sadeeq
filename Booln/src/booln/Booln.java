@@ -21,10 +21,10 @@ public class Booln {
     int fnum ;
     int snum ;
    
-    System.out.println("Enter first number");
+    System.out.println("Enter the first number");
     fnum = Compare.nextInt();
     
-    System.out.println("Enter second number");
+    System.out.println("Enter the second number");
     snum = Compare.nextInt();
     
     boolean b1 = (fnum<snum);// Testing if the first number is less than the second number.
