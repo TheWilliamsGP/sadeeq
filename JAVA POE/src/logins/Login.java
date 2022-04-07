@@ -254,17 +254,20 @@ public class Login extends javax.swing.JFrame {
     String password = jPassword.getText();
     String username = jtxtUserName.getText();
     
-    if(password.contains("one") && (username.contains("sadeeq")));
-    {
+    if(password.contains(is_Valid_Password) && (username.contains("sadeeq")));{
         jPassword.setText(null);
         jtxtUserName.setText(null);
-        systemExit();
+        //systemExit();
         
         Login_s Info = new Login_s();
         Info.setVisible(true);
-        
     }
-
+    //else 
+    { 
+        JOptionPane.showMessageDialog(null,"Invalid Login Details", "Login Error", JOptionPane.ERROR_MESSAGE);
+        jPassword.setText(null);
+        jtxtUserName.setText(null);   
+            }
     }//GEN-LAST:event_jbtnLoginActionPerformed
 
     private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed

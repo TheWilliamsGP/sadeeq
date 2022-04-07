@@ -30,3 +30,138 @@ public class GameZone {
     }
     
 }
+if(password.length() < PASSWORD_LENGTH) return false;
+        
+            int charCount = 0;
+            int numCount = 0;
+            for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (is_Numeric(ch)) numCount++;
+            else if (is_Letter(ch)) charCount++;
+            else return false;
+    }
+    
+             //else 
+    {
+        return (charCount >= 2 && numCount >= 2);
+            }
+    }
+        //  if(fname.trim().equals("") || Sname.trim().equals("") || usname.trim().equals("") 
+         //  || password.trim().equals("") || passc.trim().equals(""))
+       // {
+      //      JOptionPane.showMessageDialog(null,"One or more fields are empty","Empty Fields",2);
+       //     return false;
+       // }
+     //   else if(password.equals(passc))
+        
+       // {
+        //       JOptionPane.showMessageDialog(null,"Passwords Doesn't match","Confirm Password",2);
+       //        return false;
+       // }
+        
+       // else {
+       //     return true;
+       // }
+
+        JOptionPane.showMessageDialog(null,"account created");
+         systemExit();
+
+
+
+
+
+ //String fname = jTextField_name.getText();
+       // String Sname = jTextField_surname.getText();
+       // String usname = jTextField_uname.getText();
+        //String pass = String.valueOf(jPassword.getPassword());
+        //String passc = String.valueOf(jPasswordC.getPassword());
+       // String password = jPassword.getText();
+       // String username = jTextField_uname.getText();
+       // String Gender = "Male";
+        
+       if(Valid_Password) {
+            
+           JOptionPane.showMessageDialog(null,"Passwords Doesn't match","Confirm Password",2);
+              return false;
+           //System.out.println("Password is valid: " + s);
+        } 
+       else 
+       {
+           return true;
+           //JOptionPane.showMessageDialog(null,"Passwords Doesn't match","Confirm Password",2);
+          
+            //System.out.println("Not a valid password: " + s);
+        }
+
+    }
+
+    public static boolean Valid_Password(String jPassword) {
+       
+            if(password.length() < PASSWORD_LENGTH) return false;
+        
+            int charCount = 0;
+            int numCount = 0;
+            for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (is_Numeric(ch)) numCount++;
+            else if (is_Letter(ch)) charCount++;
+            else return false;
+    }
+    
+             //else 
+    {
+        return (charCount >= 2 && numCount >= 2);
+            }
+    }
+        //  if(fname.trim().equals("") || Sname.trim().equals("") || usname.trim().equals("") 
+         //  || password.trim().equals("") || passc.trim().equals(""))
+       // {
+      //      JOptionPane.showMessageDialog(null,"One or more fields are empty","Empty Fields",2);
+       //     return false;
+       // }
+     //   else if(password.equals(passc))
+        
+       // {
+        //       JOptionPane.showMessageDialog(null,"Passwords Doesn't match","Confirm Password",2);
+       //        return false;
+       // }
+        
+       // else {
+       //     return true;
+       // }
+
+        JOptionPane.showMessageDialog(null,"account created");
+         systemExit();
+
+
+
+
+
+
+
+
+String password = jPassword.getText();
+    String username = jtxtUserName.getText();
+    
+    if (password.contains(is_Valid_Password) && (username.contains(is_Letter)));
+        
+            {
+            jtxtUserName.setText(null);
+            jPassword.setText(null);
+            systemExit();
+             
+            Login_s Info = new Login_s();
+            Info.setVisible(true);
+             }
+    else 
+        
+        {
+                
+        JOptionPane.showMessageDialog(null,"Invalid Login Details", "Login Error", JOptionPane.ERROR_MESSAGE);
+        jtxtUserName.setText(null);
+        jPassword.setText(null);
+                }

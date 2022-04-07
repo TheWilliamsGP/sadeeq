@@ -10,7 +10,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowEvent;
 import javax.swing.ButtonGroup;
 import java.util.*;
-import logins.Login_s;
+//import logins.Login_s;
 import static logins.Registrations.is_Valid_Password;
 
 /**
@@ -20,7 +20,7 @@ import static logins.Registrations.is_Valid_Password;
 public class Registrations extends javax.swing.JFrame {
 public static final int PASSWORD_LENGTH = 8;   
 public boolean is_Valid_Password;
-public static final int USERNAME_LENGTH = 5;
+//public static final int USERNAME_LENGTH = 5;
     /**
      * Creates new form Registrations
      */
@@ -378,6 +378,7 @@ public static final int USERNAME_LENGTH = 5;
         
         if(is_Valid_Password) //&& (username.contains("Sadeeq")))
          {
+        JOptionPane.showMessageDialog(null,"Account Created", "valid Username or Password", JOptionPane.OK_OPTION);
         jTextField_uname.setText(null);
         jPasswords.setText(null);
         

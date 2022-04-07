@@ -3,6 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package poe;
+import poe.Login;
+import javax.swing.JOptionPane;
+import java.awt.Toolkit;
+import java.awt.event.WindowEvent;
 
 /**
  *
@@ -14,7 +18,9 @@ public class POE {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
     }
     
 }
