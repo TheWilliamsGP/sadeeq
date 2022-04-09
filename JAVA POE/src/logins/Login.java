@@ -257,7 +257,7 @@ public class Login extends javax.swing.JFrame {
     if(password.contains(is_Valid_Password) && (username.contains("sadeeq"))){
         jPassword.setText(null);
         jtxtUserName.setText(null);
-        //systemExit();
+        systemExit();
         
         Login_s Info = new Login_s();
         Info.setVisible(true);
