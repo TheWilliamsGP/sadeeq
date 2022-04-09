@@ -254,7 +254,7 @@ public class Login extends javax.swing.JFrame {
     String password = jPassword.getText();
     String username = jtxtUserName.getText();
     
-    if(password.contains(is_Valid_Password) && (username.contains("sadeeq")));{
+    if(password.contains(is_Valid_Password) && (username.contains("sadeeq"))){
         jPassword.setText(null);
         jtxtUserName.setText(null);
         //systemExit();
@@ -262,7 +262,7 @@ public class Login extends javax.swing.JFrame {
         Login_s Info = new Login_s();
         Info.setVisible(true);
     }
-    //else 
+    else 
     { 
         JOptionPane.showMessageDialog(null,"Invalid Login Details", "Login Error", JOptionPane.ERROR_MESSAGE);
         jPassword.setText(null);
