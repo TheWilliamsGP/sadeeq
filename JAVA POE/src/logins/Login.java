@@ -53,6 +53,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 30));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -101,7 +102,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jbtnLogin.setBackground(new java.awt.Color(255, 255, 255));
-        jbtnLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 25)); // NOI18N
+        jbtnLogin.setFont(new java.awt.Font("Helvetica Neue", 0, 25)); // NOI18N
         jbtnLogin.setForeground(new java.awt.Color(0, 0, 0));
         jbtnLogin.setText("Login");
         jbtnLogin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -211,7 +212,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,17 +230,17 @@ public class Login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 108, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(267, 267, 267)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(132, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -254,10 +255,12 @@ public class Login extends javax.swing.JFrame {
     String password = jPassword.getText();
     String username = jtxtUserName.getText();
     
-    if(password.contains(is_Valid_Password) && (username.contains("sadeeq"))){
+    if(password.contains("one") && (username.contains("sadeeq"))){
         jPassword.setText(null);
         jtxtUserName.setText(null);
-        systemExit();
+        
+        
+            
         
         Login_s Info = new Login_s();
         Info.setVisible(true);
@@ -285,7 +288,7 @@ public class Login extends javax.swing.JFrame {
 
     private void jbtnSignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSignupActionPerformed
         Registrations Info = new Registrations();
-        Info.setVisible(true);
+        //Info.setVisible(true);
     }//GEN-LAST:event_jbtnSignupActionPerformed
 
     private void jtxtUserNameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtxtUserNameFocusGained
@@ -320,7 +323,7 @@ public class Login extends javax.swing.JFrame {
           jPassword.getText().trim().toLowerCase().equals("Password")){
            
            jPassword.setText("password");
-            jPassword.setForeground(Color.BLACK);
+            jPassword.setForeground(Color.GRAY);
        }
     }//GEN-LAST:event_jPasswordFocusLost
 
@@ -357,7 +360,9 @@ public class Login extends javax.swing.JFrame {
                 new Login().setVisible(true);
             }
         });
-    }
+        
+        }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
